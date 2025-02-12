@@ -1,4 +1,5 @@
 import HeaderBox from "@/components/HeaderBox";
+import RightSidebar from "@/components/RightSidebar";
 import TotalBalanceBox from "@/components/TotalBalanceBox";
 
 export default function Home() {
@@ -24,6 +25,12 @@ export default function Home() {
               />
             </header>
         </div>
+
+        <RightSidebar
+          user={loggedIn}
+          transactions={[]}
+          banks={[]}
+        />
       </section>
     </>
   );
