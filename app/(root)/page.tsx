@@ -3,7 +3,7 @@ import RightSidebar from "@/components/RightSidebar";
 import TotalBalanceBox from "@/components/TotalBalanceBox";
 
 export default function Home() {
-    const loggedIn = {firstName: "Kabir"};
+    const loggedIn = {firstName: "Kabir", lastName: "Naved", email: "example@gmail.com"};
   return (
     <>
       <section className="home ">
@@ -29,7 +29,7 @@ export default function Home() {
         <RightSidebar
           user={loggedIn}
           transactions={[]}
-          banks={[]}
+          banks={[{}, {}]}
         />
       </section>
     </>
